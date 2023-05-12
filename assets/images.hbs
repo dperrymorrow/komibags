@@ -1,0 +1,10 @@
+{{#each images as |image index|}}
+  <a
+    href="{{image.full}}"
+    data-pswp-width="{{size.width}}"
+    data-pswp-height="{{size.height}}"
+    target="_blank"
+  >
+    <img src="{{image.thumb}}" alt="" />
+  </a>
+{{/each}}

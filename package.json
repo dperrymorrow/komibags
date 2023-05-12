@@ -1,0 +1,24 @@
+{
+  "name": "komibags",
+  "version": "1.0.0",
+  "description": "komibags.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server . -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dperrymorrow/komibags.git"
+  },
+  "author": "David Morrow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dperrymorrow/komibags/issues"
+  },
+  "homepage": "https://github.com/dperrymorrow/komibags#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "image-size": "^1.0.2"
+  }
+}
