@@ -21,14 +21,6 @@ body {
   /* border-bottom: 15px solid #efefef; */
 }
 
-a {
-  color: #444;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 @media (max-width: 900px) {
   #gallery {
     column-count: 2;
