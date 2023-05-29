@@ -7,10 +7,10 @@ fs.rmSync(thumbDir, { recursive: true, force: true });
 fs.rmSync(fullDir, { recursive: true, force: true });
 
 fs.readdirSync(originalDir)
-  .filter((file) => file.toLowerCase().endsWith(".jpg"))
+  .filter((file) => file.endsWith(".jpg"))
   .map((file) => {
     const original = path.join(originalDir, file);
-    const thumb = path.join(thumbDir, file.toLowerCase());
+    const thumb = path.join(thumbDir, file);
     // const full = path.join(fullDir, file.toLocaleLowerCase());
 
     return Jimp.read(original, (err, lenna) => {

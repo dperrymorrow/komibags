@@ -8,7 +8,7 @@ const template = Handlebars.compile(fs.readFileSync("./src/index.hbs", "utf8"));
 const images = [];
 
 fs.readdirSync(originalDir)
-  .filter((file) => file.toLowerCase().endsWith("jpg"))
+  .filter((file) => file.endsWith("jpg"))
   .map((file) => {
     const org = path.join(originalDir, file);
     const thumb = path.join(thumbDir, file);
