@@ -48,12 +48,12 @@
         {{#each images as |image index|}}
           <a
             class="lightbox"
-            href="{{image.full}}"
+            href="/{{image.full}}"
             data-pswp-width="{{size.width}}"
             data-pswp-height="{{size.height}}"
             target="_blank"
           >
-            <img loading="lazy" src="{{image.thumb}}" />
+            <img loading="lazy" src="/{{image.thumb}}" />
           </a>
         {{/each}}
       </div>
