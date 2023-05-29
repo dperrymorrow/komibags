@@ -1,20 +1,39 @@
 html,
 body {
-  background-color: #efefef;
+  /* background-color: #efefef; */
 }
 
-#gallery {
+:root {
+  --primary: #00897b;
+}
+
+.gallery {
   box-sizing: border-box;
   column-count: 3;
   column-gap: 15px;
+
+  /* display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap; */
 }
 
-#gallery a {
+.gallery a {
   width: 33%;
+  height: auto;
 }
 
-#gallery a img {
+a.disabled {
+  cursor: initial;
+}
+
+/* .gallery a:hover img {
+  box-shadow: 3px 3px 10px black;
+} */
+
+.gallery a img {
   /* width: 100%; */
+  /* border: 1px solid #f1f1f1; */
   margin-bottom: 15px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -22,7 +41,7 @@ body {
 }
 
 @media (max-width: 900px) {
-  #gallery {
+  .gallery {
     column-count: 2;
   }
 }

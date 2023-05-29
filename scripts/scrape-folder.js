@@ -1,20 +1,32 @@
 const fs = require("fs");
-const sizeOf = require("image-size");
 const path = require("path");
+const Jimp = require("jimp");
+const { thumbDir, fullDir, originalDir } = require("./constants.js");
 
-const images = [];
-const prefix = "./assets/imgs/";
+fs.rmSync(thumbDir, { recursive: true, force: true });
+fs.rmSync(fullDir, { recursive: true, force: true });
 
-fs.readdirSync("./assets/imgs")
+fs.readdirSync(originalDir)
   .filter((file) => file.toLowerCase().endsWith(".jpg"))
-  .forEach((file) => {
-    const size = sizeOf(prefix + file);
+  .map((file) => {
+    const original = path.join(originalDir, file);
+    const thumb = path.join(thumbDir, file.toLowerCase());
+    // const full = path.join(fullDir, file.toLocaleLowerCase());
 
-    images.push({
-      size,
-      thumb: path.join(prefix + "thumbs/" + file),
-      full: path.join(prefix + file),
+    return Jimp.read(original, (err, lenna) => {
+      if (err) {
+        console.log(original);
+        throw err;
+      }
+      lenna
+        .resize(400, Jimp.AUTO) // resize
+        .quality(100) // set JPEG quality
+        .write(thumb); // save
+
+      // just going to use the originals...
+      // lenna
+      //   .resize(2000, Jimp.AUTO) // resize
+      //   .quality(100) // set JPEG quality
+      //   .write(full); // save
     });
   });
-
-fs.writeFileSync("./assets/data.json", JSON.stringify(images, null, 2));

@@ -1,0 +1,64 @@
+<html data-theme="light">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/photoswipe@5.3.7/dist/photoswipe.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <nav>
+        <ul>
+          <li><strong>Made In Portland, OR</strong></li>
+        </ul>
+
+        <ul>
+          <li>
+            <a
+              role="button"
+              class="secondary outline"
+              href="https://etsy.com/shop/komipdx"
+              target="_blank"
+            >Etsy</a>
+
+            <a
+              role="button"
+              class="secondary outline"
+              href="https://www.instagram.com/komipdx/"
+              target="_blank"
+            >Instagram</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="gallery">
+        <a href="#" class="disabled">
+          <img src="assets/imgs/origami-crown.png" />
+        </a>
+
+        {{#each images as |image index|}}
+          <a
+            class="lightbox"
+            href="{{image.full}}"
+            data-pswp-width="{{size.width}}"
+            data-pswp-height="{{size.height}}"
+            target="_blank"
+          >
+            <img loading="lazy" src="{{image.thumb}}" />
+          </a>
+        {{/each}}
+      </div>
+    </main>
+
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
