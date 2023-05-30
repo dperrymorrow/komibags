@@ -4,7 +4,14 @@ const path = require("path");
 const fs = require("fs");
 
 const { thumbDir, originalDir } = require("./constants.js");
-const template = Handlebars.compile(fs.readFileSync("./src/index.hbs", "utf8"));
+
+const layout = Handlebars.compile(fs.readFileSync("./src/layout.hbs", "utf8"));
+
+const pages = {
+  index: Handlebars.compile(fs.readFileSync("./src/index.hbs", "utf8")),
+  about: Handlebars.compile(fs.readFileSync("./src/about.hbs", "utf8")),
+};
+
 const images = [];
 
 fs.readdirSync(originalDir)
@@ -13,13 +20,17 @@ fs.readdirSync(originalDir)
     const org = path.join(originalDir, file);
     const thumb = path.join(thumbDir, file);
 
-    const size = sizeOf(org);
+    const largeSize = sizeOf(org);
+    const smallSize = sizeOf(thumb);
     images.push({
-      size,
+      largeSize,
+      smallSize,
       thumb,
       full: org,
     });
   });
 
-const html = template({ images });
-fs.writeFileSync("./index.html", html);
+Object.entries(pages).forEach(([name, template]) => {
+  const html = layout({ content: template({ images }) });
+  fs.writeFileSync(`./${name}.html`, html);
+});

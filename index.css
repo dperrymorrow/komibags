@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather%7CRoboto+Slab:700");
+
 html,
 body {
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
   /* background-color: #efefef; */
 }
 
 :root {
+  --font-family: Merriweather;
   --primary: #00897b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .gallery {
@@ -44,4 +57,27 @@ a.disabled {
   .gallery {
     column-count: 2;
   }
+}
+
+.about .heading {
+  background: linear-gradient(#cad4db, white);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.about .heading img {
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
