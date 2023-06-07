@@ -31,6 +31,9 @@ fs.readdirSync(originalDir)
   });
 
 Object.entries(pages).forEach(([name, template]) => {
-  const html = layout({ content: template({ images }) });
+  const html = layout({
+    isAbout: name === "about",
+    content: template({ images }),
+  });
   fs.writeFileSync(`./${name}.html`, html);
 });

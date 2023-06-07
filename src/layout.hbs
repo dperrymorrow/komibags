@@ -35,8 +35,11 @@
 
         <ul>
           <li>
-            <a role="button" class="secondary" href="index.html">Work</a>
-            <a role="button" class="secondary" href="about.html">About</a>
+            {{#if isAbout}}
+              <a role="button" class="secondary" href="index.html">Work</a>
+            {{else}}
+              <a role="button" class="secondary" href="about.html">About</a>
+            {{/if}}
           </li>
           <li>
             <a
