@@ -1,411 +1,99 @@
 <html data-theme="light">
   <head>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.3.7/dist/photoswipe.css" />
-    <link rel="stylesheet" href="/index.css" />
-
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="b5465aba-2b58-47a8-9f87-1d1698a36414"></script>
+    <link rel="stylesheet" href="/assets/styles/index.css" />
   </head>
 
   <!-- Google tag (gtag.js) -->
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-31JRHNV0X6"></script>
   <script>
-    window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-31JRHNV0X6');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-31JRHNV0X6");
   </script>
 
   <body>
     <main class="container">
+      <dialog>
+        <article>
+          <header>
+            <button aria-label="Close" rel="prev"></button>
+            <hgroup>
+              <h2>Send a message.</h2>
+              <h3>Id love to hear from you.</h3>
+            </hgroup>
+          </header>
+
+          <form
+            method="post"
+            action="https://forms.un-static.com/forms/280f6efdff04d14342c88f1015bbd412166c593d"
+          >
+            <input type="text" name="name" placeholder="Enter your name" required />
+            <input type="email" name="email" placeholder="Enter your e-mail address" required />
+            <textarea name="message" cols="40" rows="10"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </article>
+      </dialog>
+
       <nav>
         <ul>
           <li>
-              <a role="button" class="secondary" href="about.html">About</a>
-
-            <a role="button" class="secondary" href="https://etsy.com/shop/komipdx" target="_blank">Etsy</a>
-
-            <a role="button" class="secondary" href="https://www.instagram.com/komicustoms/" target="_blank">Instagram</a>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="https://komipacks.etsy.com" target="_blank">Etsy</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/komipacks/" target="_blank">Instagram</a>
           </li>
         </ul>
       </nav>
 
-      <div class="gallery">
-  <a href="#" class="disabled">
-    <img src="assets/imgs/origami-crown.png" />
-  </a>
+      <!--<img loading="lazy" src="assets/imgs/crown-only.png" />-->
 
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/01.jpg"
-      data-pswp-width="2364"
-      data-pswp-height="1804"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="305"
-        src="assets/imgs/thumbs/01.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/02.jpg"
-      data-pswp-width="2650"
-      data-pswp-height="2239"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="338"
-        src="assets/imgs/thumbs/02.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/03-2.jpg"
-      data-pswp-width="1790"
-      data-pswp-height="2135"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="477"
-        src="assets/imgs/thumbs/03-2.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/03.jpg"
-      data-pswp-width="3121"
-      data-pswp-height="3937"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="505"
-        src="assets/imgs/thumbs/03.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/04-5.jpg"
-      data-pswp-width="3105"
-      data-pswp-height="3421"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="441"
-        src="assets/imgs/thumbs/04-5.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/04.jpg"
-      data-pswp-width="3257"
-      data-pswp-height="3225"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="396"
-        src="assets/imgs/thumbs/04.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/05.jpg"
-      data-pswp-width="3200"
-      data-pswp-height="3140"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="393"
-        src="assets/imgs/thumbs/05.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/06.jpg"
-      data-pswp-width="2210"
-      data-pswp-height="2018"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="365"
-        src="assets/imgs/thumbs/06.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/08.jpg"
-      data-pswp-width="3214"
-      data-pswp-height="3616"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="450"
-        src="assets/imgs/thumbs/08.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/10.jpg"
-      data-pswp-width="3130"
-      data-pswp-height="2936"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="375"
-        src="assets/imgs/thumbs/10.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/11-5.jpg"
-      data-pswp-width="3224"
-      data-pswp-height="3866"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="480"
-        src="assets/imgs/thumbs/11-5.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/11.jpg"
-      data-pswp-width="3209"
-      data-pswp-height="3741"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="466"
-        src="assets/imgs/thumbs/11.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/12.jpg"
-      data-pswp-width="2684"
-      data-pswp-height="1506"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="224"
-        src="assets/imgs/thumbs/12.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/13.jpg"
-      data-pswp-width="1664"
-      data-pswp-height="2332"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="561"
-        src="assets/imgs/thumbs/13.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/14.jpg"
-      data-pswp-width="3545"
-      data-pswp-height="2405"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="271"
-        src="assets/imgs/thumbs/14.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/15.jpg"
-      data-pswp-width="3296"
-      data-pswp-height="2447"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="297"
-        src="assets/imgs/thumbs/15.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/16.jpg"
-      data-pswp-width="3558"
-      data-pswp-height="2260"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="254"
-        src="assets/imgs/thumbs/16.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/17.jpg"
-      data-pswp-width="4000"
-      data-pswp-height="3000"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="300"
-        src="assets/imgs/thumbs/17.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/18.jpg"
-      data-pswp-width="4000"
-      data-pswp-height="3000"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="300"
-        src="assets/imgs/thumbs/18.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/19.jpg"
-      data-pswp-width="3054"
-      data-pswp-height="2438"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="319"
-        src="assets/imgs/thumbs/19.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/20.jpg"
-      data-pswp-width="2508"
-      data-pswp-height="2376"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="379"
-        src="assets/imgs/thumbs/20.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/21.jpg"
-      data-pswp-width="2768"
-      data-pswp-height="2766"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="400"
-        src="assets/imgs/thumbs/21.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/22.jpg"
-      data-pswp-width="4000"
-      data-pswp-height="3000"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="300"
-        src="assets/imgs/thumbs/22.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/23.jpg"
-      data-pswp-width="2446"
-      data-pswp-height="2233"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="365"
-        src="assets/imgs/thumbs/23.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/24.jpg"
-      data-pswp-width="2461"
-      data-pswp-height="1650"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="268"
-        src="assets/imgs/thumbs/24.jpg"
-      />
-    </a>
-    <a
-      class="lightbox"
-      href="assets/imgs/originals/25.jpg"
-      data-pswp-width="2121"
-      data-pswp-height="1903"
-      target="_blank"
-    >
-      <img
-        loading="lazy"
-        width="400"
-        height="359"
-        src="assets/imgs/thumbs/25.jpg"
-      />
-    </a>
-</div>
+      <div class="gallery">
+        <div class="grid-5">
+          <a href="/assets/imgs/home-gallery/black-loowit-front.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/black-loowit-side.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-rugged.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-white-axe.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-shoulder.jpg"> </a>
+        </div>
+
+        <div class="grid-3">
+          <a href="/assets/imgs/home-gallery/camo-dopp.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/clamshell-blue.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/clamshell-teal.jpg"> </a>
+        </div>
+
+        <div class="grid-2">
+          <a class="feature" href="/assets/imgs/home-gallery/loowit-front-white.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-white-back.jpg"> </a>
+        </div>
+
+        <div class="grid-3">
+          <a href="/assets/imgs/home-gallery/mini-messenger.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/mini-messenger-side.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/mico-messenger.jpg"> </a>
+        </div>
+
+        <div class="grid-5 reversed">
+          <a href="/assets/imgs/home-gallery/bright-dopp.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/dopp-yellow.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/full-dopp-stack.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/wallet-pile.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/dopp-overview.jpeg"> </a>
+        </div>
+      </div>
 
       <strong>Made in Portland, OR</strong>
-
     </main>
 
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="/assets/scripts/index.js"></script>
   </body>
 </html>

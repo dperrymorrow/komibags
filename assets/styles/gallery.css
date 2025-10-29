@@ -1,0 +1,78 @@
+@import "https://unpkg.com/photoswipe@5.3.7/dist/photoswipe.css";
+
+:root {
+  --grid-gap: 10px;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--grid-gap);
+
+  :first-child {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+  }
+
+  &.reversed {
+    direction: rtl;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: var(--grid-gap);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: var(--grid-gap);
+}
+
+.grid-3,
+.grid-2,
+.grid-5 {
+  margin-bottom: var(--grid-gap);
+}
+
+.gallery a {
+  background-color: #f1f1f1;
+  display: inline-flex;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+}
+
+a.disabled {
+  cursor: initial;
+}
+
+/* .gallery a:hover img {
+  box-shadow: 3px 3px 10px black;
+} */
+
+.gallery a img {
+  /* width: 100%; */
+  /* border: 1px solid #f1f1f1; */
+  box-sizing: border-box;
+  /* border-bottom: 15px solid #efefef; */
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  filter: blur(4px);
+
+  &.loaded {
+    opacity: 1;
+    filter: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    /*column-count: 2;*/
+  }
+}

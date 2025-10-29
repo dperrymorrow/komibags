@@ -1,0 +1,42 @@
+@import "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css";
+@import "./gallery.css";
+/*
+@font-face {
+  font-family: "sf-pro";
+  src: url("/assets/fonts/sf-pro-display_regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "sf-pro-bold";
+  src: url("/assets/fonts/sf-pro-display_bold.woff2") format("woff2");
+}*/
+/*
+html,
+body {
+  background: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(239, 239, 239, 1) 100%);
+}
+
+.about .heading {
+  background: linear-gradient(#cad4db, white);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.about .heading img {
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}

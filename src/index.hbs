@@ -1,22 +1,18 @@
 <div class="gallery">
+
   <a href="#" class="disabled">
-    <img src="assets/imgs/origami-crown.png" />
+    <img src="assets/imgs/crown-only.png" />
   </a>
 
   {{#each images as |image index|}}
     <a
       class="lightbox"
-      href="{{image.full}}"
-      data-pswp-width="{{largeSize.width}}"
-      data-pswp-height="{{largeSize.height}}"
+      href="{{imgPath}}"
+      data-pswp-width="{{size.width}}"
+      data-pswp-height="{{size.height}}"
       target="_blank"
     >
-      <img
-        loading="lazy"
-        width="{{smallSize.width}}"
-        height="{{smallSize.height}}"
-        src="{{image.thumb}}"
-      />
+      <img loading="lazy" width="{{size.width}}" height="{{size.height}}" src="{{imgPath}}" />
     </a>
   {{/each}}
 </div>
