@@ -3,28 +3,8 @@
 @import "./grids.css";
 @import "./gallery.css";
 
-@font-face {
-  font-family: "sf-pro";
-  src: url("/assets/fonts/sf-pro-display_regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "sf-pro-bold";
-  src: url("/assets/fonts/sf-pro-display_bold.woff2") format("woff2");
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sf-pro-bold;
-}
-
 html,
 body {
-  font-family: sf-pro;
   background: #ffffff;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(239, 239, 239, 1) 100%);
 }
@@ -44,27 +24,27 @@ nav {
   }
 }
 
-/*this can probally be deleted*/
+/*contact form*/
 
-.about .heading {
-  background: linear-gradient(#cad4db, white);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 20px 20px 0 0;
-  border-radius: 10px;
-  margin-bottom: 40px;
-}
+dialog {
+  article {
+    border-radius: var(--border-radius) !important;
+  }
+  header {
+    padding: 1.5rem 1.8rem;
+  }
 
-.about p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
+  form {
+    margin-bottom: 0;
+    padding: 1rem;
 
-.about .heading img {
-  width: 300px;
-  height: 300px;
-  border: 10px solid white;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+    button {
+      /*background-color: #679190 !important;*/
+      /*border: none;*/
+      font-weight: bold !important;
+      display: inline-flex !important;
+      width: auto !important;
+      margin: 0 !important;
+    }
+  }
 }

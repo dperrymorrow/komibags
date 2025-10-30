@@ -16,35 +16,12 @@
   </script>
 
   <body>
-    <main class="container">
-      <dialog>
-        <article>
-          <header>
-            <button aria-label="Close" rel="prev"></button>
-            <hgroup>
-              <h2>Send a message.</h2>
-              <h3>Id love to hear from you.</h3>
-            </hgroup>
-          </header>
-
-          <form
-            method="post"
-            action="https://forms.un-static.com/forms/280f6efdff04d14342c88f1015bbd412166c593d"
-          >
-            <input type="text" name="name" placeholder="Enter your name" required />
-            <input type="email" name="email" placeholder="Enter your e-mail address" required />
-            <textarea name="message" cols="40" rows="10"></textarea>
-
-            <button type="submit">Send</button>
-          </form>
-        </article>
-      </dialog>
-
+    <div class="container">
       <nav>
         <ul>
           <li>
             <a href="/">
-              <img src="/assets/imgs/nav-logo.svg" width="200" />
+              <img src="/assets/imgs/nav-logo.svg" width="130" />
             </a>
           </li>
         </ul>
@@ -59,21 +36,79 @@
               <img src="/assets/imgs/instagram.svg" width="110" style="margin-top: 9px" />
             </a>
           </li>
-          <!--<li>
-            <a href="#" id="modal-trigger">
-              <img src="/assets/imgs/mail.svg" width="30" style="margin-top: 7px" />
+          <li>
+            <a href="#" class="modal-toggle">
+              <img src="/assets/imgs/mail.svg" width="25" style="margin-top: 10px" />
             </a>
-          </li>-->
+          </li>
         </ul>
       </nav>
+    </div>
 
+    <main class="container">
+      <dialog>
+        <article>
+          <header>
+            <button class="modal-toggle" aria-label="Close" rel="prev"></button>
+            <hgroup>
+              <h2>Send a message.</h2>
+              <h3>Id love to hear from you.</h3>
+            </hgroup>
+          </header>
+
+          <form
+            method="post"
+            action="https://forms.un-static.com/forms/280f6efdff04d14342c88f1015bbd412166c593d"
+          >
+            <input type="text" name="name" placeholder="Enter your name" required />
+            <input type="email" name="email" placeholder="Enter your e-mail address" required />
+            <textarea name="message" cols="40" rows="8"></textarea>
+
+            <button class="outline contrast" type="submit">Send</button>
+          </form>
+        </article>
+      </dialog>
+
+      <hgroup>
+        <h2>Ultralight Gear</h2>
+        <h3>Minimalist gear for ultralight backpacking adventures.</h3>
+      </hgroup>
       <div class="gallery">
         <div class="grid-2-1-1">
-          <a href="/assets/imgs/home-gallery/black-loowit-front.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-front-white.jpg"> </a>
           <a href="/assets/imgs/home-gallery/black-loowit-side.jpg"> </a>
           <a href="/assets/imgs/home-gallery/loowit-rugged.jpg"> </a>
           <a href="/assets/imgs/home-gallery/loowit-white-axe.jpg"> </a>
           <a href="/assets/imgs/home-gallery/loowit-shoulder.jpg"> </a>
+        </div>
+        <div class="grid-1-1-1">
+          <a href="/assets/imgs/home-gallery/loowit-cinch.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-hip-attach.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/hip-belt.jpg"> </a>
+        </div>
+        <div class="grid-1-1">
+          <a href="/assets/imgs/home-gallery/black-loowit-front.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-white-back.jpg"> </a>
+        </div>
+        <div class="grid-1-1-1 reversed">
+          <a href="/assets/imgs/home-gallery/loowit-st-helens.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/loowit-pocket.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/hip-belt.jpg"> </a>
+        </div>
+      </div>
+
+      <hgroup>
+        <h2>EDC Gear</h2>
+        <h3>Bags everyday, urban adventures.</h3>
+      </hgroup>
+
+      <div class="gallery">
+        <div class="grid-2-1-1 reversed">
+          <a href="/assets/imgs/home-gallery/bright-dopp.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/dopp-yellow.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/full-dopp-stack.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/wallet-pile.jpg"> </a>
+          <a href="/assets/imgs/home-gallery/dopp-overview.jpeg"> </a>
         </div>
 
         <div class="grid-1-1-1">
@@ -82,27 +117,14 @@
           <a href="/assets/imgs/home-gallery/clamshell-teal.jpg"> </a>
         </div>
 
-        <div class="grid-1-1">
-          <a class="feature" href="/assets/imgs/home-gallery/loowit-front-white.jpg"> </a>
-          <a href="/assets/imgs/home-gallery/loowit-white-back.jpg"> </a>
-        </div>
-
         <div class="grid-1-1-1">
           <a href="/assets/imgs/home-gallery/mini-messenger.jpg"> </a>
           <a href="/assets/imgs/home-gallery/mini-messenger-side.jpg"> </a>
           <a href="/assets/imgs/home-gallery/mico-messenger.jpg"> </a>
         </div>
-
-        <div class="grid-2-1-1 reversed">
-          <a href="/assets/imgs/home-gallery/bright-dopp.jpg"> </a>
-          <a href="/assets/imgs/home-gallery/dopp-yellow.jpg"> </a>
-          <a href="/assets/imgs/home-gallery/full-dopp-stack.jpg"> </a>
-          <a href="/assets/imgs/home-gallery/wallet-pile.jpg"> </a>
-          <a href="/assets/imgs/home-gallery/dopp-overview.jpeg"> </a>
-        </div>
       </div>
 
-      <strong>Made in Portland, OR</strong>
+      <p>Made in Portland, OR</p>
     </main>
 
     <script type="module" src="/assets/scripts/index.js"></script>

@@ -1,5 +1,9 @@
 @import "https://unpkg.com/photoswipe@5.3.7/dist/photoswipe.css";
 
+.gallery {
+  padding-bottom: 2rem;
+}
+
 .gallery a {
   background-color: #f1f1f1;
   display: inline-flex;
